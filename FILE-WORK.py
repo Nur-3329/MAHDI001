@@ -121,7 +121,7 @@ def morshed1():
         ua = f'[FBAN/FB4A;FBAV/'+str(random.randint(11,99))+'.0.0.'+str(random.randint(1111,9999))+';FBBV/'+str(random.randint(1111111,9999999))+';[FBAN/FB4A;FBAV/296.0.0.44.119;FBBV/255824654;FBDM/{density=2.25,width=720,height=1280};FBLC/it_IT;FBRV/256855919;FBCR/WINDTRE;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/'+str(kkkkki)+';FBSV/7.1.1;FBOP/19;FBCA/armeabi-v7a:armeabi;]'
         return ua
 #-----------------------------------------------------#
-vers = requests.get('https://raw.githubusercontent.com/MORSHED-404/MORSHED-404/main/version.txt').text
+vers = requests.get('https://github.com/Nur-3329/Version.txt/blob/main/Version.txt ').text
 version = str(vers)
 #-------------------------------#
 #os.system('xdg-open https://www.facebook.com/profile.php?id=100078455010053')
@@ -170,10 +170,6 @@ try:
     if "OxFF" in xnx:
         print(f'\x1b[1;92m {XX}[\x1b[1;92m⍣{XX}]\x1b[38;5;46m TOOL IS OFF NOW ')
         sys.exit()
-    if "update" in xnx:
-        for up in range(999):
-            print(f"\x1b[1;92m {XX}[\x1b[1;92m⍣{XX}]\x1b[38;5;46m WAIT YOUR NEXT UPDATE ")
-            time.sleep(0.8)
     if "server" in xnx:
         print(f' {warna} \x1b[1;97m[{warna}⍣\x1b[1;97m]\33[1;92m {warna}SERVER IS OFF')
         sys.exit()
